@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_item"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/img_elemento_lista_bote_icono"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_vertical"
+        android:contentDescription="@string/icono_bote"
+        android:src="@drawable/ic_list_bote" />
+
+    <TextView
+        android:id="@+id/txt_elemento_lista_bote_nombre"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="5dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt_elemento_lista_bote_total"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="right|center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textSize="28sp" />
+
+</LinearLayout>

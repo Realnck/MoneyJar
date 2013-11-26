@@ -1,0 +1,267 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_layout_mnt_bote"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp" >
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/img_mnt_bote_icono" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:contentDescription="@string/icono_bote" -->
+            <!-- android:src="@drawable/ic_list_bote" /> -->
+
+            <TextView
+                android:id="@+id/txt_mnt_bote_nombre_titulo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ed_mnt_bote_nombre"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/toca_para_escribir"
+                android:inputType="textCapSentences"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_mnt_bote_total_titulo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="@string/total"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_mnt_bote_total"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="@string/total_hint"
+                android:paddingLeft="12dp"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <!-- <View -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="1dp" -->
+            <!-- android:background="#d3e992" /> -->
+
+            <LinearLayout
+                android:id="@+id/linear_layout_mnt_bote_importe_tope"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/background_item"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="mostrarDecimalDialog"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txt_mnt_bote_importe_tope_titulo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="@string/tope"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_mnt_bote_importe_tope"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="left"
+                        android:hint="@string/tope_editor_sin_tope"
+                        android:paddingLeft="12dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/check_mnt_bote_tope"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:onClick="topeCheck"
+                    android:saveEnabled="false" />
+
+                <!-- <ToggleButton -->
+                <!-- android:id="@+id/toggle_mnt_bote_tope" -->
+                <!-- android:layout_width="wrap_content" -->
+                <!-- android:layout_height="wrap_content" -->
+                <!-- android:gravity="right" -->
+                <!-- android:onClick="topeClick" /> -->
+
+            </LinearLayout>
+            <!-- <View -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="1dp" -->
+            <!-- android:background="#d3e992" /> -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/background_item"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="showTipo"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/txt_mnt_bote_tipo_titulo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tipo"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <Spinner
+                    android:id="@+id/spin_mnt_bote_tipo"
+                    style="@style/SpinnerAsEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:clickable="false"
+                    android:duplicateParentState="true"
+                    android:prompt="@string/tipo"
+                    android:spinnerMode="dialog"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <!-- <View -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="1dp" -->
+            <!-- android:background="#d3e992" /> -->
+
+            <TextView
+                android:id="@+id/txt_mnt_bote_fecha_creacion_titulo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="@string/fecha_creacion"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_mnt_bote_fecha_creacion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:paddingLeft="12dp"
+                android:textSize="16sp"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_mnt_bote_fecha_limite"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/background_item"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="showDatePickerDialog"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:id="@+id/txt_mnt_bote_fecha_limite_titulo"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/fecha_limite"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txt_mnt_bote_fecha_limite"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:hint="@string/fecha_limite_editor_sin_limite"
+                        android:paddingLeft="12dp"
+                        android:textSize="16sp" />
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/check_mnt_bote_fecha_limite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_vertical"
+                    android:onClick="fechaLimiteCheck"
+                    android:saveEnabled="false" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_mnt_bote_admnistrador_titulo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="@string/administrador"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txt_mnt_bote_admnistrador"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:hint="@string/sin_administrador"
+                android:paddingLeft="12dp"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_mnt_bote_guardar"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:onClick="guardarBote"
+            android:text="@string/guardar" />
+
+        <Button
+            android:id="@+id/btn_mnt_bote_cancelar"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:onClick="cancelar"
+            android:text="@string/cancelar" />
+    </LinearLayout>
+
+</LinearLayout>

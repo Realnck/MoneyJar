@@ -1,0 +1,40 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_bote_consulta_add_persona"
+        android:icon="@drawable/ic_action_add_person"
+        android:showAsAction="ifRoom"
+        android:title="@string/add_persona">
+        <menu>
+            <item
+                android:id="@+id/menu_bote_consulta_persona_nueva"
+                android:icon="@drawable/ic_action_add_person"
+                android:title="@string/nueva"/>
+            <item
+                android:id="@+id/menu_bote_consulta_persona_desde_contacto"
+                android:icon="@drawable/ic_action_add_person"
+                android:title="@string/desde_contacto"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/menu_bote_consulta_add_movimiento"
+        android:icon="@drawable/ic_action_add_movimiento"
+        android:showAsAction="ifRoom"
+        android:title="@string/add_movimiento">
+        <menu>
+            <item
+                android:id="@+id/menu_bote_consulta_movimiento_ingresar"
+                android:icon="@drawable/ic_action_add_movimiento"
+                android:title="@string/ingresar"/>
+            <item
+                android:id="@+id/menu_bote_consulta_movimiento_retirar"
+                android:icon="@drawable/ic_action_add_movimiento"
+                android:title="@string/retirar"/>
+            <item
+                android:id="@+id/menu_bote_consulta_movimiento_devolver"
+                android:icon="@drawable/ic_action_add_movimiento"
+                android:title="@string/devolver"/>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,294 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linear_Layout_bote_consulta"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scroll_consulta_bote"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingTop="16dp" >
+
+            <TextView
+                android:id="@+id/txt_consulta_bote_nombre_titulo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/nombre"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/txt_consulta_bote_nombre"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:textSize="16sp" />
+
+            <!-- <LinearLayout -->
+            <!-- android:id="@+id/linear_Layout_consulta_bote" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:clickable="true" -->
+            <!-- android:focusable="true" -->
+            <!-- android:orientation="vertical" > -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/txt_consulta_bote_total_titulo" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:text="@string/total" -->
+            <!-- android:textSize="18sp" -->
+            <!-- android:textStyle="bold" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/txt_consulta_bote_total" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:textSize="16sp" /> -->
+            <!-- </LinearLayout> -->
+
+            <TextView
+                android:id="@+id/txt_consulta_bote_importe_tope_titulo"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:text="@string/tope"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_consulta_bote_importe_tope"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:paddingLeft="12dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_consulta_bote_tipo_titulo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tipo"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_consulta_bote_tipo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_consulta_bote_fecha_creacion_titulo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fecha_creacion"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_consulta_bote_fecha_creacion"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txt_consulta_bote_fecha_limite_titulo"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/fecha_limite"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_consulta_bote_fecha_limite"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:textSize="16sp" />
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/txt_consulta_bote_admnistrador_titulo" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:text="@string/administrador" -->
+            <!-- android:textSize="18sp" -->
+            <!-- android:textStyle="bold" /> -->
+
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/txt_consulta_bote_admnistrador" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:paddingLeft="12dp" -->
+            <!-- android:textSize="16sp" /> -->
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="0dp" -->
+    <!-- android:layout_weight="2" -->
+    <!-- android:orientation="vertical" > -->
+
+
+    <!-- <TextView -->
+    <!-- android:id="@+id/txt_consulta_bote_personas_titulo" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:text="@string/personas" -->
+    <!-- android:textSize="18sp" -->
+    <!-- android:textStyle="bold" /> -->
+
+
+    <!-- <ListView -->
+    <!-- android:id="@+id/list_consulta_bote_consulta_personas" -->
+    <!-- android:layout_width="fill_parent" -->
+    <!-- android:layout_height="wrap_content" -->
+    <!-- android:dividerHeight="5dp" -->
+    <!-- android:paddingLeft="16dp" -->
+    <!-- android:paddingRight="16dp" /> -->
+    <!-- </LinearLayout> -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txt_consulta_bote_ingresado_total_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="@string/ingresado_total"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_consulta_bote_ingresado_total"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txt_consulta_bote_devoluciones_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="@string/devoluciones"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_consulta_bote_devoluciones"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/azul"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txt_consulta_bote_ingresado_actual_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="@string/ingresado_actual"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_consulta_bote_ingresado_actual"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/verde"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txt_consulta_bote_gastado_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="@string/gastado"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_consulta_bote_gastado"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/rojo"
+                android:textSize="28sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txt_consulta_bote_disponible_titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center_vertical"
+                android:text="@string/disponible"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <!-- <Button -->
+            <!-- android:id="@+id/btn_consulta_bote_total" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:gravity="center" -->
+            <!-- android:textSize="28sp" /> -->
+
+            <TextView
+                android:id="@+id/txt_consulta_bote_disponible"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right|center_vertical"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

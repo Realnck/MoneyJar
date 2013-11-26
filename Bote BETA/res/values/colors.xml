@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="verde_01">#f0f8db</color>
+    <color name="verde_02">#e2f0b6</color>
+    <color name="verde_03">#d3e992</color>
+    <color name="verde_04">#c5e26d</color>
+    <color name="verde_05">#b6db49</color>
+    
+    <color name="focusedpressed">#cfcfcf</color>
+    <color name="focused">#cfe9f3</color>
+    <color name="pressed">#cfcfcf</color>
+    
+    <color name="blanco">#ffffff</color>
+    <color name="negro">#000000</color>
+    <color name="rojo">#ff0000</color>
+    <color name="verde">#00ff00</color>
+    <color name="azul">#0000ff</color>
+
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light" />
+
+    <style name="SpinnerAsEditText" parent="@android:style/Widget.Spinner">
+        <item name="android:background">@drawable/background_item</item>
+    </style>
+
+    <style name="CustomTabPageIndicator.Text" parent="android:TextAppearance.Medium">
+        <item name="android:textColor">@drawable/tab_text_color</item>
+    </style>
+
+</resources>
